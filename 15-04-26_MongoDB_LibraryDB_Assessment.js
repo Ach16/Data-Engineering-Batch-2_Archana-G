@@ -856,50 +856,49 @@ db.borrowings.aggregate([
 
 // ## Final Challenge
 // 25. Display:member name,city,total books borrowed. Sort by **highest books borrowed first**.
-db.members.aggregate([
+db.borrowings.aggregate([
   {
-    $lookup: {
-      from: "borrowings",
-      localField: "member_id",
-      foreignField: "member_id",
-      as: "borrowings"
+    $group: {
+      _id: "$member_id",
+      total_books: { $sum: 1 }
     }
   },
   {
+    $lookup: {
+      from: "members",
+      localField: "_id",
+      foreignField: "member_id",
+      as: "member"
+    }
+  },
+  { $unwind:"$member"},
+  {
     $project: {
-      name: 1,
-      city: 1,
-      total_books: { $size:"$borrowings" }
+      _id: 0,
+      name: "$member.name",
+      city: "$member.city",
+      total_books: 1
     }
   },
   { $sort: { total_books: -1 } }
 ])
 // {
-//   _id: ObjectId('69df0eba0a3866c2aba1075c'),
+//   total_books: 2,
 //   name: 'Aarav',
-//   city: 'Hyderabad',
-//   total_books: 2
+//   city: 'Hyderabad'
 // }
 // {
-//   _id: ObjectId('69df0eba0a3866c2aba10760'),
+//   total_books: 2,
 //   name: 'Kiran',
-//   city: 'Hyderabad',
-//   total_books: 2
-// }{
-//   _id: ObjectId('69df0eba0a3866c2aba1075d'),
+//   city: 'Hyderabad'
+// }
+// {
+//   total_books: 1,
 //   name: 'Priya',
-//   city: 'Bangalore',
-//   total_books: 1
+//   city: 'Bangalore'
 // }
 // {
-//   _id: ObjectId('69df0eba0a3866c2aba1075e'),
+//   total_books: 1,
 //   name: 'Rahul',
-//   city: 'Mumbai',
-//   total_books: 1
-// }
-// {
-//   _id: ObjectId('69df0eba0a3866c2aba1075f'),
-//   name: 'Sneha',
-//   city: 'Delhi',
-//   total_books: 0
+//   city: 'Mumbai'
 // }
