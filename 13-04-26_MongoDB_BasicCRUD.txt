@@ -1,0 +1,44 @@
+//INSERT-create collection explicitly by inserting data
+db.employees.insertMany([
+  {_id: 1, name: 'Clark', dept: 'Sales', salary: 45000, city: "Hyderabad"},
+  {_id: 2, name: 'Dave', dept: 'Accounting',salary: 50000, city: "Bangalore"},
+  {_id: 3, name: 'Ava', dept: 'Sales',salary: 47000, city: "Mumbai"}
+]);
+
+//SELECT-select all
+print("Initial data:"); 
+printjson(db.employees.find().toArray());
+
+//SELECT-select with condition
+print("\nEmployees in Sales Dept: ");
+printjson(db.employees.find({dept: 'Sales'}).toArray());
+
+//FILTER COLUMNS-read only specific fields
+print("\nOnly name and dept:")
+printjson(db.employees.find({},{name: 1,dept: 1,_id:0}).toArray());
+
+//UPDATE-update one document
+db.employees.updateOne(
+  {_id:1},
+  {$set: {salary:48000}}
+);
+print("\nAfter updateOne ({_id:1} salary changed):");
+printjson(db.employees.find({_id:1}).toArray());
+
+//UPDATE-update many documents
+db.employees.updateMany(
+  {dept: "Sales"},
+  {$set: {bonus: 5000}}
+);
+print("\nAfter updateMany (sales emp will get bonus):");
+printjson(db.employees.find({dept:'Sales'}).toArray());
+
+//DELETE-delete one document
+db.employees.deleteOne({_id:2});
+print("\nAfter deleteOne (id:2 is removed):")
+printjson(db.employees.find().toArray());
+
+//DELETE-delete many documents
+db.employees.deleteMany({dept:'Sales'});
+print("\nAfter deleteMany (Sales employees are removed):");
+printjson(db.employees.find().toArray());
