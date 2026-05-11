@@ -1,0 +1,112 @@
+Azure Devops
+Requirement Breakdown
+
+Epic:
+
+Customer Service
+
+Features:
+
+Your Orders
+Returns and Refunds
+Manage Addresses
+Manage Prime
+Payment Settings
+Account Settings
+Digital Services and Device Support
+
+User Stories:
+
+Your Orders
+	Track packages
+	Edit or cancel orders
+Returns and Refunds
+	Return or exchange items
+	Print return mailing labels 
+Manage Addresses
+	Update your addresses
+	Add address, landmark details
+Manage Prime
+	View your benefits
+	Membership details
+Payment Settings
+	Add or edit payment methods
+	Change expired debit or credit card
+Account Settings
+	Change your email or password
+	Update login information
+Digital Services and Device Support
+	Find device help and support
+	Troubleshoot device issues
+
+Tasks:
+
+Your Orders
+	Track packages
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Edit or cancel orders
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Returns and Refunds
+	Return or exchange items
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Print return mailing labels
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Manage Addresses
+	Update your addresses
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Add address, landmark details
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Manage Prime
+	View your benefits
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Membership details
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Payment Settings
+	Add or edit payment methods
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Change expired debit or credit card
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Account Settings
+	Change your email or password
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Update login information
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+
+Digital Services and Device Support
+	Find device help and support
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
+	Troubleshoot device issues
+		Build UI - 6 hrs
+		Build API - 4 hrs
+		Build Database - 7 hrs
