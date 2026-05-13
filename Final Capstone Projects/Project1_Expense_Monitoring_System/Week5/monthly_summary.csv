@@ -1,0 +1,7 @@
+user_id,month,amount,user_name,email,phone,gender,monthly_income,savings,alert
+1,2026-03,1650.0,Priyanka Sharma,priyankasharma@gmail.com,9876543210,Female,65500,63850.0,Normal
+2,2026-04,8000.0,Ankit Sharma,ankitsharma@gmail.com,9876543211,Male,70000,62000.0,Normal
+2,2026-05,199.0,Ankit Sharma,ankitsharma@gmail.com,9876543211,Male,70000,69801.0,Normal
+3,2026-04,2500.0,Sonakshi Sharma,sonakshisharma@gmail.com,9876543212,Female,60000,57500.0,Normal
+3,2026-05,12000.0,Sonakshi Sharma,sonakshisharma@gmail.com,9876543212,Female,60000,48000.0,Normal
+4,2026-05,5000.0,Karan Sharma,karansharma@gmail.com,9876293837,Male,30000,25000.0,Normal
