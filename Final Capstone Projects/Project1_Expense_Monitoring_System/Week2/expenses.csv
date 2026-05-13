@@ -1,0 +1,9 @@
+expense_id,user_id,user_name,category,amount,payment_method,expense_date,merchant
+1,1,Priyanka Sharma,Food,$450,UPI,2026-03-25,Swiggy
+2,1,Priyanka Sharma,Travel,$1200,Card,2026-03-29,RedBus
+3,2,Ankit Sharma,Shopping,$5000,Card,2026-04-02,Amazon
+4,3,Sonakshi Sharma,Bills,$2500,UPI,2026-04-15,TNEB
+5,2,Ankit Sharma,Shopping,$3000,Credit Card,2026-04-23,Myntra
+7,3,Sonakshi Sharma,Bills,$12000,Cash,2026-05-05,House rent
+8,2,Ankit Sharma,Entertainment,$199,UPI,2026-05-07,Netflix
+9,4,Karan Sharma,Travel,$5000,Debit Card,2026-05-10,Hotel
