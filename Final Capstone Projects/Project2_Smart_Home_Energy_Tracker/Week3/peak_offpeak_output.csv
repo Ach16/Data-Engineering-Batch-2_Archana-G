@@ -1,0 +1,10 @@
+,device_name,usage_period,total_energy_usage
+0,Smart TV,Peak,1.2
+1,Desktop Computer,Peak,2.1
+2,Speaker System,Peak,1.95
+3,Washing Machine,OffPeak,4.8
+4,Dining Light,Peak,0.35
+5,Refrigerator,OffPeak,2.3
+6,Air Conditioner,OffPeak,5.6
+7,Ceiling Fan,OffPeak,0.85
+8,Water Heater,OffPeak,7.5
